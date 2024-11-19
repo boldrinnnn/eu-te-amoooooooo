@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a Pessoa Mais Especial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff9aa2, #fcb1c8, #fde2e4);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        header {
+            background-color: rgba(255, 105, 180, 0.6);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 15px;
+        }
+
+        .heart {
+            font-size: 5em;
+            margin: 20px;
+            color: #ff6f91;
+            animation: beat 1.5s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 182, 193, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            margin: 20px auto;
+            width: 50%;
+            max-width: 400px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Estilo do botão */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff6f91;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .link-button:hover {
+            background-color: #ff4f6f;
+            transform: scale(1.05);
+        }
+
+        /* Corações flutuantes */
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-hearts span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6f91;
+            opacity: 0.8;
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Mais corações flutuantes */
+        .floating-hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .floating-hearts span:nth-child(2) { left: 20%; animation-delay: 1s; }
+        .floating-hearts span:nth-child(3) { left: 30%; animation-delay: 2s; }
+        .floating-hearts span:nth-child(4) { left: 40%; animation-delay: 3s; }
+        .floating-hearts span:nth-child(5) { left: 50%; animation-delay: 4s; }
+        .floating-hearts span:nth-child(6) { left: 60%; animation-delay: 5s; }
+        .floating-hearts span:nth-child(7) { left: 70%; animation-delay: 6s; }
+        .floating-hearts span:nth-child(8) { left: 80%; animation-delay: 7s; }
+        .floating-hearts span:nth-child(9) { left: 90%; animation-delay: 8s; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Para Você, Meu Amor</h1>
+    </header>
+
+    <!-- Substituindo a imagem -->
+    <div class="image-container">
+        <img src="https://i.imgur.com/KTNIpBb.jpeg" alt="Imagem especial">
+    </div>
+
+    <div class="heart">💖</div>
+
+    <div class="message">
+        <p>Você é a luz que ilumina meus dias e a inspiração por trás de cada sorriso meu.</p>
+        <p>Este site é só um pequeno gesto para te lembrar o quanto você é especial para mim.</p>
+        <p>Eu te amo hoje, amanhã e sempre. 💕</p>
+    </div>
+
+    <!-- Botão -->
+    <div class="button-container">
+        <a href="https://www.youtube.com/watch?v=hKgl5-lkT8U" target="_blank" class="link-button">Clique aqui!</a>
+    </div>
+
+    <footer>
+        <p>Com todo o meu carinho, [Seu Nome]</p>
+    </footer>
+
+    <!-- Corações flutuantes -->
+    <div class="floating-hearts">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
